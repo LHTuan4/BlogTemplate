@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "user-blog-3a67f",
+    "staging": "blog-327c6"
+  }
+}
