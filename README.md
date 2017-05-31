@@ -1,2 +1,1 @@
-# BlogTemplate
-Blog template using Boostrap
+Blog template using Bootstrap

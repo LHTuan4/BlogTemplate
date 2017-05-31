@@ -1,0 +1,26 @@
+<div class="search-box">
+    <input type="text" ng-change="onQueryChange()"
+           ng-blur="showDropdown = false" ng-focus="showDropdown = true"
+           placeholder="Find others..." ng-model="query">
+    <div class="search-dropdown" ng-show="showDropdown">
+        <div class="search-item row" ng-repeat="profile in profiles" ng-click="profileClick($index)">
+            <div class="col" style="padding: 0">
+                <img ng-src="{{users[profile].profileImg}}" width="48" height="48">
+            </div>
+            <div class="col">
+                <p class="search-item-header">{{users[profile].displayName}}</p>
+                <p class="search-item-subHeader">{{users[profile].headline}}</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-100226274-1', 'auto');
+        ga('send', 'pageview');
+    </script>
